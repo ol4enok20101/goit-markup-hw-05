@@ -79,9 +79,6 @@ img {
 }
 
 /*Хедер*/
-.header {
-
-}
 .logo-link-header {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -588,6 +585,31 @@ img {
   0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 1;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+}
+.overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--accent-text);
+
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.portfolio-card-link:hover .overlay {
+  top: 0;
+}
 .portfolio-example-title {
   font-weight: 700;
   font-size: 18px;
@@ -628,6 +650,8 @@ img {
   margin-bottom: 0;
 }
 .portfolio-card {
+  position: relative;
+
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   overflow: hidden;
